@@ -32,7 +32,7 @@ namespace MatchManagement
              }));
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Matches", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Match Odds Management API", Version = "v1" });
                 c.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, $"{Assembly.GetExecutingAssembly().GetName().Name}.xml"));
             });
             services.AddControllers();

@@ -6,8 +6,6 @@ namespace MatchManagement.Models.DTO
 {
     public class MatchDTO
     {
-        //public int ID { get; set; }
-
         public string Description { get; set; }
 
         [DataType(DataType.Date)]
@@ -20,7 +18,5 @@ namespace MatchManagement.Models.DTO
         public string TeamB { get; set; }
 
         public Sport Sport { get; set; }
-
-       // public List<MatchOddDTO> MatchOdds { get; set; }
     }
 }
