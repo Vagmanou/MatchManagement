@@ -1,0 +1,24 @@
+﻿version: '3'
+
+services:
+  api:
+    build: ./api
+    ports:
+      - "8000:80"  # Map API container port to host
+    depends_on:
+      - db  # This ensures the API container starts after the database container
+    networks:
+      - my_network
+
+  db:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      SA_PASSWORD: "12345"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"  # Map SQL Server port to host
+    networks:
+      - my_network
+
+networks:
+  my_network:
