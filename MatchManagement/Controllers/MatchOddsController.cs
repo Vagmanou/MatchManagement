@@ -21,7 +21,7 @@ namespace MatchManagement.Controllers
         }
 
         /// <summary>
-        /// get all odds
+        /// Get all odds
         /// </summary>
         /// <returns> Returns a list of all odds for all matches</returns>
         [HttpGet]
@@ -111,7 +111,7 @@ namespace MatchManagement.Controllers
         }
 
         /// <summary>
-        /// delete a specific odd for a match
+        /// Delete a specific odd for a match
         /// </summary>
         /// <param name="matchId"></param>
         /// <param name="id"></param>
